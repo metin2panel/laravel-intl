@@ -1,0 +1,46 @@
+{
+    "name": "depiedra/laravel-intl",
+    "description": "Easy to use internationalization functions for Laravel",
+    "keywords": [
+        "laravel",
+        "internationalization",
+        "intl",
+        "i18n",
+        "l10n"
+    ],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Erdem Aksu",
+            "email": "eaksu94@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "laravel/framework": "^8.0",
+        "commerceguys/intl": "^1.0.1",
+        "jenssegers/date": "^4.0",
+        "umpirsky/country-list": "^2.0",
+        "umpirsky/locale-list": "^1.0",
+        "punic/punic": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "laravel/laravel": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Depiedra\\LaravelIntl\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Depiedra\\LaravelIntl\\ServiceProvider"
+            ]
+        }
+    }
+}
